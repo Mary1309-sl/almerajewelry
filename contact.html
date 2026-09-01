@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Alméra</title>
+  <meta name="description" content="Get in touch with Aurélie for product inquiries, availability and private appointments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--onhero" id="header">
+    <a href="index.html" class="brand">
+      <img class="brand__img brand__img--dark" src="img/logo.png" alt="Alméra Jewellery" />
+      <img class="brand__img brand__img--light" src="img/logo-white.png" alt="Alméra Jewellery" />
+    </a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="jewelry.html" data-i18n="nav.jewelry">Jewelry</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang" aria-label="Language">
+        <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+        <button class="lang__opt" data-set-lang="en">EN</button>
+        <span class="lang__sep">/</span>
+        <button class="lang__opt" data-set-lang="ru">RU</button>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="jewelry.html" data-i18n="nav.jewelry">Jewelry</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+    <div class="lang" aria-label="Language">
+      <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+      <button class="lang__opt" data-set-lang="en">EN</button>
+      <span class="lang__sep">/</span>
+      <button class="lang__opt" data-set-lang="ru">RU</button>
+    </div>
+  </nav>
+
+  <!-- DELIVERY BANNER -->
+  <section class="editorial editorial--left">
+    <div class="editorial__media imgfail-target">
+      <img data-fallback src="img/editorial-home.png" alt="Alméra editorial campaign" />
+    </div>
+    <div class="editorial__left reveal">
+      <div class="editorial__panel">
+        <p class="eyebrow" data-i18n="ship.title">Delivery &amp; Orders</p>
+        <p class="editorial__line" data-i18n-html="ship.line1">Delivery within <strong>7–10 days</strong>.</p>
+        <p class="editorial__line" data-i18n-html="ship.line2">Enjoy <strong>complimentary delivery on orders of $2,000 and above</strong>.</p>
+        <p class="editorial__cap" data-i18n="ship.caption">Get in touch with us to place your order or receive more information.</p>
+        <a class="btn btn--light" href="https://wa.me/601137331597" target="_blank" rel="noopener" data-i18n="ship.btn">Contact to Order</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADING -->
+  <section class="wrap" style="padding-top:clamp(4rem,8vw,6rem);">
+    <div class="center reveal" style="max-width:620px;margin-inline:auto;">
+      <p class="eyebrow" data-i18n="ct.eyebrow">Contact</p>
+      <h1 class="display" style="font-size:clamp(3rem,8vw,5.5rem);margin-top:0.6rem;" data-i18n="ct.title">Get in Touch</h1>
+      <p class="lead" style="margin-top:1.2rem;" data-i18n="ct.lead">For product inquiries, availability or any other questions, please contact us.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CHANNELS -->
+  <section class="section wrap">
+    <div class="reveal" style="max-width:560px;margin-inline:auto;">
+      <p class="eyebrow" data-i18n="ct.direct">Direct</p>
+      <div class="contact-channels">
+        <a href="#" onclick="return false"><span class="value">Instagram</span><span class="label">@almera.jewellery</span></a>
+        <a href="mailto:mariaseledevskaa9@gmail.com"><span class="value">Email</span><span class="label">mariaseledevskaa9@gmail.com</span></a>
+        <a href="https://wa.me/601137331597" target="_blank" rel="noopener"><span class="value">WhatsApp</span><span class="label">+60 11 3733 1597</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">Alméra<span data-i18n="footer.sub">Fine Jewellery</span></div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.exploreH">Explore</h4>
+          <nav><ul>
+            <li><a href="jewelry.html" data-i18n="footer.jewelry">Jewelry</a></li>
+            <li><a href="about.html" data-i18n="footer.about">About</a></li>
+            <li><a href="contact.html" data-i18n="footer.contact">Contact</a></li>
+            <li><a href="#" onclick="return false">Instagram</a></li>
+          </ul></nav>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.contactH">Contact</h4>
+          <nav><ul>
+            <li><a href="mailto:mariaseledevskaa9@gmail.com">mariaseledevskaa9@gmail.com</a></li>
+            <li><a href="#" onclick="return false">@almera.jewellery</a></li>
+            <li><a href="https://wa.me/601137331597" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul></nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> <span data-i18n="footer.copy">Alméra. All rights reserved.</span></span>
+        <a href="#" onclick="return false" data-i18n="footer.privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

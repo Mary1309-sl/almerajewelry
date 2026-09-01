@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Alméra</title>
+  <meta name="description" content="The story of Aurélie — contemporary fine jewelry, made to last." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--onhero" id="header">
+    <a href="index.html" class="brand">
+      <img class="brand__img brand__img--dark" src="img/logo.png" alt="Alméra Jewellery" />
+      <img class="brand__img brand__img--light" src="img/logo-white.png" alt="Alméra Jewellery" />
+    </a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="jewelry.html" data-i18n="nav.jewelry">Jewelry</a></li>
+        <li><a href="about.html" aria-current="page" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang" aria-label="Language">
+        <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+        <button class="lang__opt" data-set-lang="en">EN</button>
+        <span class="lang__sep">/</span>
+        <button class="lang__opt" data-set-lang="ru">RU</button>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="jewelry.html" data-i18n="nav.jewelry">Jewelry</a>
+    <a href="about.html" aria-current="page" data-i18n="nav.about">About</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    <div class="lang" aria-label="Language">
+      <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+      <button class="lang__opt" data-set-lang="en">EN</button>
+      <span class="lang__sep">/</span>
+      <button class="lang__opt" data-set-lang="ru">RU</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero--page hero--about">
+    <div class="hero__media imgfail-target">
+      <img data-fallback src="img/about-hero.png" alt="Alméra — Our Story" />
+    </div>
+    <div class="wrap hero__inner">
+      <p class="eyebrow reveal" style="color:rgba(255,255,255,.9)" data-i18n="ab.eyebrow">About the Brand</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section wrap">
+    <div class="about-intro reveal">
+      <p data-i18n-html="ab.intro">Almera began with the friendship of two women — Alexandra and Maria — and a shared idea that, over time, grew into a jewelry brand. At its heart is a simple philosophy: <span class="hl">jewelry should be part of everyday life, not something reserved for a special occasion.</span></p>
+    </div>
+  </section>
+
+  <!-- THE BRAND -->
+  <section class="wrap about-block">
+    <div class="split reveal">
+      <div class="split__media imgfail-target">
+        <img data-fallback src="img/alexandra.png" alt="Alméra — Alexandra" />
+      </div>
+      <div class="split__body">
+        <p class="eyebrow" data-i18n="ab.b1.eyebrow">01 — Alexandra</p>
+        <p data-i18n="ab.b1.p1" style="margin-top:1.2rem;">For Alexandra, her love of jewelry began in childhood. She collected stones, admired jewelry, and was fascinated by its shapes, colors, and intricate details. Over the years, this curiosity grew into a genuine passion for the art of jewelry and a desire to one day create something of her own.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PHILOSOPHY -->
+  <section class="wrap about-block">
+    <div class="split split--reverse reveal">
+      <div class="split__media imgfail-target">
+        <img data-fallback src="img/our-story.png" alt="Alméra — Maria & Armenia" />
+      </div>
+      <div class="split__body">
+        <p class="eyebrow" data-i18n="ab.b2.eyebrow">02 — Maria</p>
+        <p data-i18n="ab.b2.p1" style="margin-top:1.2rem;">For Maria, Armenia became an important part of her life — a country where she lived for many years. It was there that she experienced a culture in which jewelry holds a special place in everyday life. In Armenia, jewelry does not have to wait for a special occasion — it becomes part of the way women dress every day, a way to express femininity, individuality, and self-appreciation. There is a love for dressing beautifully, paying attention to detail, and wearing fine jewelry not only when going out, but simply because beauty can be part of every day.</p>
+        <h2 class="section-title" style="margin-top:1.8rem;font-size:clamp(1.5rem,2.6vw,2.1rem);" data-i18n="ab.b2.p2">This is where two stories came together around one shared idea, giving rise to Almera — jewelry that becomes part of your everyday life.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT & DETAILS -->
+  <section class="wrap about-block">
+    <div class="center reveal" style="max-width:620px;margin-inline:auto;">
+      <p class="eyebrow" data-i18n="ab.b3.eyebrow">03 — Certification</p>
+      <h2 class="section-title section-title--oneline" style="margin-top:1rem;" data-i18n="ab.b3.title">Quality Verified by Experts</h2>
+      <p class="lead" style="margin-top:1.2rem;" data-i18n-html="ab.b3.lead">Every diamond undergoes an independent gemological assessment. Certification by <strong>GIA, IGI, and NGTC</strong> confirms the stated characteristics and quality of each stone.</p>
+    </div>
+
+    <div class="grid grid--3 reveal" style="margin-top:clamp(3rem,6vw,4.5rem);">
+      <figure class="figure-tall imgfail-target">
+        <img data-fallback src="img/craft-1.png" alt="Materials" />
+      </figure>
+      <figure class="figure-tall imgfail-target">
+        <img data-fallback src="img/craft-2.png" alt="Stones" />
+      </figure>
+      <figure class="figure-tall imgfail-target">
+        <img data-fallback src="img/craft-3.png" alt="Handcraft" />
+      </figure>
+    </div>
+    <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+      <a href="jewelry.html" class="btn" data-i18n="ab.cta">Explore Jewelry</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">Alméra<span data-i18n="footer.sub">Fine Jewellery</span></div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.exploreH">Explore</h4>
+          <nav><ul>
+            <li><a href="jewelry.html" data-i18n="footer.jewelry">Jewelry</a></li>
+            <li><a href="about.html" data-i18n="footer.about">About</a></li>
+            <li><a href="contact.html" data-i18n="footer.contact">Contact</a></li>
+            <li><a href="#" onclick="return false">Instagram</a></li>
+          </ul></nav>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.contactH">Contact</h4>
+          <nav><ul>
+            <li><a href="mailto:mariaseledevskaa9@gmail.com">mariaseledevskaa9@gmail.com</a></li>
+            <li><a href="#" onclick="return false">@almera.jewellery</a></li>
+            <li><a href="https://wa.me/601137331597" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul></nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> <span data-i18n="footer.copy">Alméra. All rights reserved.</span></span>
+        <a href="#" onclick="return false" data-i18n="footer.privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

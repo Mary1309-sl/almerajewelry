@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jewelry — Alméra</title>
+  <meta name="description" content="The Aurélie jewelry catalogue — rings, earrings, necklaces and bracelets." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--solid" id="header">
+    <a href="index.html" class="brand"><img class="brand__img" src="img/logo.png" alt="Alméra Jewellery" /></a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="jewelry.html" aria-current="page" data-i18n="nav.jewelry">Jewelry</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang" aria-label="Language">
+        <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+        <button class="lang__opt" data-set-lang="en">EN</button>
+        <span class="lang__sep">/</span>
+        <button class="lang__opt" data-set-lang="ru">RU</button>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="jewelry.html" aria-current="page" data-i18n="nav.jewelry">Jewelry</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    <div class="lang" aria-label="Language">
+      <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+      <button class="lang__opt" data-set-lang="en">EN</button>
+      <span class="lang__sep">/</span>
+      <button class="lang__opt" data-set-lang="ru">RU</button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADING -->
+  <section class="wrap" style="padding-top:clamp(9rem,15vw,12rem);">
+    <div class="center reveal" style="max-width:640px;margin-inline:auto;">
+      <p class="eyebrow" data-i18n="jw.eyebrow">The Collection</p>
+      <h1 class="display" style="font-size:clamp(3rem,8vw,5.5rem);margin-top:0.6rem;" data-i18n="jw.title">Jewelry</h1>
+      <p class="lead" style="margin-top:1.2rem;" data-i18n-html="jw.lead">Every diamond undergoes an independent assessment and carries a <strong>GIA, IGI or NGTC</strong> certificate confirming its quality and characteristics.</p>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters reveal" data-filters>
+      <button class="filter is-active" data-filter="all" data-i18n="filter.all">All</button>
+      <button class="filter" data-filter="rings" data-i18n="filter.rings">Rings</button>
+      <button class="filter" data-filter="earrings" data-i18n="filter.earrings">Earrings</button>
+      <button class="filter" data-filter="necklaces" data-i18n="filter.necklaces">Necklaces</button>
+      <button class="filter" data-filter="bracelets" data-i18n="filter.bracelets">Bracelets</button>
+    </div>
+
+    <!-- PRICE RANGE -->
+    <div class="pricebar reveal" data-pricebar>
+      <div class="pricebar__head">
+        <span class="pricebar__label" data-i18n="price.label">Price</span>
+        <span class="pricebar__values"><span data-price-min></span> — <span data-price-max></span></span>
+      </div>
+      <div class="pricerange">
+        <div class="pricerange__track"></div>
+        <div class="pricerange__fill" data-price-fill></div>
+        <input type="range" class="pricerange__input" data-price-lower aria-label="Minimum price" />
+        <input type="range" class="pricerange__input" data-price-upper aria-label="Maximum price" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG GRID -->
+  <section class="wrap" style="padding-block:clamp(2.5rem,5vw,4rem) clamp(4.5rem,10vw,8rem);">
+    <div class="grid grid--3">
+
+      <article class="card reveal" data-category="rings"
+        data-desc="Geometry defined by brilliance. Crafted from 950 platinum, this refined V-shaped ring is fully set with rows of laboratory-grown diamonds totaling 0.64 ct. Its elegant curved silhouette creates the effect of a continuous stream of light across the finger. Featuring exceptional D–E color and VS clarity, the diamonds offer outstanding brilliance and transparency, with their characteristics confirmed by NGTC certification. A sophisticated choice for those who appreciate luxury expressed through clean, minimalist design.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-1.jpg" data-alt-src="img/ring-1-2.jpg" alt="Chevron Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Chevron Diamond Ring</h3><p class="card__meta">950 Platinum · 0.64 ct Lab-Grown Diamonds</p><p class="card__price">$885</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="rings"
+        data-desc="A symbol of perfection in warm gold. Crafted from 18K gold, this exquisite ring features a 1.50 ct princess-cut laboratory-grown diamond held securely in a refined prong setting, creating a striking geometric silhouette. Graded D color and VVS2 clarity, the diamond delivers exceptional brilliance and purity, with its characteristics confirmed by IGI certification. The warmth of yellow gold beautifully complements the stone’s dazzling radiance, creating a timeless expression of elegance and impeccable taste.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-2.jpg" data-alt-src="img/ring-2-2.jpg" alt="Princess Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Princess Diamond Ring</h3><p class="card__meta">18K Gold · 1.50 ct Lab-Grown Diamond</p><p class="card__price">$1,565</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="rings"
+        data-desc="Pure brilliance captured in platinum. This exceptional solitaire ring is crafted from 950 platinum and features a striking 3.03 ct pear-cut laboratory-grown diamond. The refined setting beautifully highlights the stone’s elegant silhouette and distinctive geometry. Graded D color and VVS2 clarity, the diamond radiates exceptional brilliance and crystal-clear light from every angle, with its characteristics confirmed by IGI certification. A captivating statement piece designed to command attention.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-3.jpg" data-alt-src="img/ring-3-2.jpg" alt="Icy Heart Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Icy Heart Diamond Ring</h3><p class="card__meta">950 Platinum · 3.03 ct Lab-Grown Diamond</p><p class="card__price">$2,650</p></div>
+      </article>
+
+      <article class="card reveal" data-category="rings"
+        data-desc="A radiant alliance of perfectly cut ovals. Crafted from 950 platinum, this exquisite ring features a continuous row of oval-cut laboratory-grown diamonds totaling 2.50 ct. Each diamond is graded D color and VVS2 clarity, delivering exceptional brilliance and purity, with its characteristics confirmed by IGI certification. The soft, flowing silhouette of the oval stones creates an uninterrupted shimmer around the finger, beautifully emphasizing the elegance of the hand. Available in three sizes for a perfect and comfortable fit.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-4.jpg" data-alt-src="img/ring-4-2.jpg" alt="Radiant Alliance Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Radiant Alliance Diamond Ring</h3><p class="card__meta">950 Platinum · 2.50 ct Lab-Grown Diamonds</p><p class="card__price">$1,780</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="rings"
+        data-desc="Soft geometry framed in platinum. Crafted from 950 platinum, this exquisite ring features a cushion-cut laboratory-grown diamond surrounded by a delicate halo of smaller diamonds, with additional pavé-set stones adorning the band. The total diamond weight is 0.87 ct. Graded D color and VVS2 clarity, the diamonds offer exceptional brilliance and purity, with their characteristics confirmed by IGI certification. The refined halo setting visually enhances the center stone, creating a captivating effect of amplified size and dazzling radiance.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-5.jpg" data-alt-src="img/ring-5-2.jpg,img/ring-5-3.jpg" alt="Halo Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Halo Diamond Ring</h3><p class="card__meta">950 Platinum · 0.87 ct Lab-Grown Diamonds</p><p class="card__price">$1,395</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="rings"
+        data-desc="Pure brilliance in a warm golden setting. This luxurious solitaire ring is crafted from 18K gold and features a striking 3.01 ct oval-cut laboratory-grown diamond. The impressive size of the stone creates exceptional visual presence while maintaining an elegant, timeless silhouette. Graded D color and VVS2 clarity, the diamond offers remarkable purity and brilliance, with its characteristics confirmed by IGI certification. Its icy radiance contrasts beautifully with the warmth of the gold, creating a statement piece that needs no additional embellishment to command attention.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-6.jpg" data-alt-src="img/ring-6-2.jpg" alt="Golden Ice Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Golden Ice Diamond Ring</h3><p class="card__meta">18K Gold · 3.01 ct Lab-Grown Diamond</p><p class="card__price">$2,465</p></div>
+      </article>
+
+      <article class="card reveal" data-category="rings"
+        data-desc="A refined harmony of platinum and light. Crafted from 950 platinum, this exquisite ring features an emerald-cut laboratory-grown diamond framed by a radiant halo of smaller diamonds. A delicate pavé-set band completes the design, creating an uninterrupted shimmer from every angle. With a total diamond weight of 1.50 ct, the stones feature exceptional D color and VVS2 clarity, with their characteristics confirmed by IGI certification. The precise geometry of the step cut lends the ring a sophisticated vintage-inspired elegance, creating a timeless statement designed to command attention.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-7.jpg" data-alt-src="img/ring-7-2.jpg" alt="Elite Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Elite Diamond Ring</h3><p class="card__meta">950 Platinum · 1.50 ct Lab-Grown Diamonds</p><p class="card__price">$1,595</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="rings"
+        data-desc="A harmonious trio of diamonds set in platinum. Crafted from 950 platinum, this exquisite ring features a round-cut laboratory-grown center diamond, elegantly framed by two refined side stones. With a total diamond weight of 2.03 ct, the composition creates exceptional brilliance and a beautifully balanced silhouette. Graded D color and VVS2 clarity, the diamonds radiate remarkable purity and brilliance, with their characteristics confirmed by IGI certification. A timeless and symbolic three-stone design, equally captivating as an engagement ring or an elevated everyday statement.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-8.jpg" data-alt-src="img/ring-8-2.jpg" alt="Platinum Trio Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Platinum Trio Diamond Ring</h3><p class="card__meta">950 Platinum · 2.03 ct Lab-Grown Diamonds</p><p class="card__price">$1,980</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="rings"
+        data-desc="A radiant centerpiece framed by two delicate sparks of light. This exquisite three-stone ring features a striking oval-cut laboratory-grown center diamond, elegantly complemented by two refined side stones. With a total diamond weight of 1.15 ct, the stones are graded D color and VVS2 clarity, with their exceptional characteristics confirmed by IGI certification. The ring is available in four luxurious settings — 18K yellow gold, white gold, rose gold, or 950 platinum — allowing you to choose the perfect expression of your style. Elegant, timeless, and versatile, this design transitions effortlessly from everyday sophistication to special occasions.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-9.jpg" data-alt-src="img/ring-9-2.jpg" alt="Harmony Diamond Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Harmony Diamond Ring</h3><p class="card__meta">18K Gold / 950 Platinum · 1.15 ct Lab-Grown Diamonds</p><p class="card__price">$1,450</p></div>
+      </article>
+
+      <article class="card reveal" data-category="rings"
+        data-desc="A timeless classic in a warm setting. This understated solitaire ring is crafted from 18K yellow gold and features a laboratory-grown diamond of perfect round-brilliant cut. The stone weighs 1.02 carats, with reference-grade characteristics: D–E color and VS clarity, confirmed by NGTC certification. The refined setting holds the stone securely, revealing its brilliance from every angle. The warm, sunlit glow of yellow gold beautifully offsets the cool, dazzling radiance of the perfect diamond — creating a luxurious, refined, and enduringly prestigious look.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/ring-10.jpg" data-alt-src="img/ring-10-2.jpg" alt="Solitaire Ring" /></div>
+        <div class="card__body"><h3 class="card__name">Solitaire Ring</h3><p class="card__meta">18K Gold · 1.02 ct Lab-Grown Diamond</p><p class="card__price">$1,310</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="earrings"
+        data-desc="Radiance captured in bloom. Delicate multi-faceted flower buds crafted from 950 platinum, each centered with a D color, VS clarity diamond. With a total diamond weight of 1.00 carat per pair, the sculpted petal setting enhances the brilliance of each stone, making the diamonds appear even larger. Accompanied by an IGI certificate, these earrings are a timeless symbol of refined elegance and impeccable craftsmanship.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-1.jpg" data-alt-src="img/earring-1-2.jpg" alt="Platinum Bud Stud Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">Platinum Bud Stud Earrings</h3><p class="card__meta">950 Platinum · 1.00 ct Diamond</p><p class="card__price">$890</p></div>
+      </article>
+
+      <article class="card reveal" data-category="necklaces"
+        data-desc="A delicate expression of elegance in platinum. Crafted from 950 platinum, this exquisite pendant features two gracefully intertwined lines — one polished to a smooth finish, the other adorned with a delicate pavé of diamonds that enhances the brilliance of the 1.00 ct laboratory-grown center diamond. Graded D–E color and VS clarity, the center diamond radiates exceptional brilliance, with its characteristics confirmed by NGTC certification. Refined and versatile, this elegant pendant brings a sophisticated touch of light to any look.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-1.jpg" data-alt-src="img/necklace-1-2.jpg" alt="Bow Diamond Pendant" /></div>
+        <div class="card__body"><h3 class="card__name">Bow Diamond Pendant</h3><p class="card__meta">950 Platinum · 1.00 ct Lab-Grown Diamond</p><p class="card__price">$1,385</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="necklaces"
+        data-desc="A delicate lacework of platinum and light. Crafted from 950 platinum, this exquisite necklace features two graceful openwork butterflies — one larger and one smaller — appearing to float effortlessly along a fine chain. Laboratory-grown diamonds totaling 0.379 ct are delicately set along the contours of the wings, creating a soft and captivating shimmer. The exceptional quality and authenticity of the diamonds are confirmed by NGTC certification. Refined, feminine, and effortlessly versatile, this necklace brings a sense of lightness and understated luxury to both everyday looks and elegant evening ensembles.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-2.jpg" data-alt-src="img/necklace-2-2.jpg" alt="Butterfly Diamond Necklace" /></div>
+        <div class="card__body"><h3 class="card__name">Butterfly Diamond Necklace</h3><p class="card__meta">950 Platinum · 0.379 ct Lab-Grown Diamonds</p><p class="card__price">$1,780</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="necklaces"
+        data-desc="A perfect golden frame for an exceptional oval. Crafted from 18K yellow gold, this luxurious pendant features an impressive 3.01 ct oval-cut laboratory-grown diamond. The refined bezel setting securely embraces the stone while highlighting its elegant proportions and creating the effect of a seamless golden halo. Graded D color and VVS2 clarity, the diamond radiates extraordinary brilliance and icy clarity, beautifully contrasted by the warm glow of yellow gold. Its exceptional characteristics are confirmed by IGI certification. A timeless statement piece created for those who appreciate distinctive design and refined luxury.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-3.jpg" data-alt-src="img/necklace-3-2.jpg" alt="Felix Eye Diamond Pendant" /></div>
+        <div class="card__body"><h3 class="card__name">Felix Eye Diamond Pendant</h3><p class="card__meta">18K Yellow Gold · 3.01 ct Lab-Grown Diamond</p><p class="card__price">$2,585</p></div>
+      </article>
+
+      <article class="card reveal" data-category="necklaces"
+        data-desc="A captivating expression of brilliance in warm gold. Crafted from 18K yellow gold, this exquisite pendant features an impressive 3.34 ct pear-cut laboratory-grown diamond. The smooth golden setting gently embraces the stone, accentuating its elegant teardrop silhouette and creating the impression of a seamless precious talisman. Graded D color and VVS2 clarity, the diamond radiates exceptional brilliance and purity, with its characteristics confirmed by IGI certification. Its icy sparkle creates a striking contrast against the warm, sunlit glow of yellow gold, resulting in a sophisticated statement piece designed to captivate.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-4.jpg" data-alt-src="img/necklace-4-2.jpg" alt="Flaming Crystal Diamond Pendant" /></div>
+        <div class="card__body"><h3 class="card__name">Flaming Crystal Diamond Pendant</h3><p class="card__meta">18K Yellow Gold · 3.34 ct Lab-Grown Diamond</p><p class="card__price">$2,765</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="necklaces"
+        data-desc="Geometric perfection illuminated in platinum. Crafted from 950 platinum, this exquisite pendant features a central emerald-cut laboratory-grown diamond, distinguished by its elegant step-cut geometry. The center stone is framed by a radiant halo of smaller diamonds, while the refined bail is adorned with delicate pavé-set diamonds for additional brilliance. With a total diamond weight of 1.03 ct, the stones feature premium D–E color and VS clarity, with their characteristics confirmed by NGTC certification. Precise geometry, exceptional clarity, and luminous brilliance make this pendant a sophisticated statement of timeless elegance.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-5.jpg" data-alt-src="img/necklace-5-2.jpg" alt="Mirror Diamond Pendant" /></div>
+        <div class="card__body"><h3 class="card__name">Mirror Diamond Pendant</h3><p class="card__meta">950 Platinum · 1.03 ct Lab-Grown Diamonds</p><p class="card__price">$1,310</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="necklaces"
+        data-desc="A timeless symbol of luck framed in platinum. Crafted from 950 platinum, this exquisite pendant takes the form of a delicate four-leaf clover or flower, composed of four pear-cut laboratory-grown diamonds with a total diamond weight of 0.725 ct, coming together in a beautifully balanced composition and creating a captivating play of light. Graded D–E color and VS clarity, the diamonds are confirmed by NGTC certification. Suspended from a fine platinum chain, this refined pendant is an elegant and versatile piece that transitions effortlessly from everyday sophistication to evening wear.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-6.jpg" data-alt-src="img/necklace-6-2.jpg" alt="Clover Diamond Pendant" /></div>
+        <div class="card__body"><h3 class="card__name">Clover Diamond Pendant</h3><p class="card__meta">950 Platinum · 0.725 ct Lab-Grown Diamonds</p><p class="card__price">$1,080</p></div>
+      </article>
+
+      <article class="card reveal" data-category="necklaces"
+        data-desc="A timeless symbol of faith illuminated in platinum. Crafted from 950 platinum, this elegant cross pendant is set with a carefully selected arrangement of round laboratory-grown diamonds totaling 0.90 ct, creating a refined and radiant silhouette. The authenticity and exceptional quality of the diamonds are confirmed by NGTC certification. Classic yet contemporary, this meaningful piece transitions effortlessly from everyday wear to elegant evening looks, bringing a subtle sense of sophistication and timeless beauty to any ensemble.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-7.jpg" data-alt-src="img/necklace-7-2.jpg" alt="Faith Diamond Pendant" /></div>
+        <div class="card__body"><h3 class="card__name">Faith Diamond Pendant</h3><p class="card__meta">950 Platinum · 0.90 ct Lab-Grown Diamonds</p><p class="card__price">$1,270</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="necklaces"
+        data-desc="A majestic drop framed in radiant brilliance. Crafted from 950 platinum, this luxurious pendant features a pear-cut laboratory-grown diamond surrounded by an elegant halo of smaller diamonds. The refined bail is also adorned with delicate pavé-set diamonds, creating an uninterrupted shimmer from every angle. With a total diamond weight of 2.03 ct, the stones feature exceptional D color and VVS2 clarity, with their characteristics confirmed by IGI certification. The radiant halo enhances the visual presence of the center stone, giving the pendant remarkable volume and brilliance. A sophisticated statement piece designed to become the captivating focal point of any special-occasion look.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/necklace-8.jpg" data-alt-src="img/necklace-8-2.jpg" alt="Royal Tear Diamond Pendant" /></div>
+        <div class="card__body"><h3 class="card__name">Royal Tear Diamond Pendant</h3><p class="card__meta">950 Platinum · 2.03 ct Lab-Grown Diamonds</p><p class="card__price">$2,080</p></div>
+      </article>
+
+      <article class="card reveal" data-category="bracelets"
+        data-desc="Timeless elegance in pure platinum. Crafted from 950 platinum, this exquisite tennis bracelet is set with a continuous line of perfectly matched round laboratory-grown diamonds, creating an uninterrupted stream of brilliance around the wrist. The bracelet is available in two refined variations: 0.10 ct per diamond for a delicate, understated sparkle, and 0.16 ct per diamond for a bolder, more captivating brilliance. The exceptional quality and purity of the diamonds are confirmed by NGTC certification. A timeless expression of luxury, designed to illuminate the wrist with effortless sophistication and exceptional brilliance. Available in two variations — 0.10 ct per diamond, 5.4 ct total ($2,980), and 0.16 ct per diamond, 7.4 ct total ($3,550).">
+        <div class="card__media imgfail-target"><img data-fallback src="img/bracelet-1.jpg" data-alt-src="img/bracelet-1-2.jpg" alt="Infinity Diamond Tennis Bracelet" /></div>
+        <div class="card__body"><h3 class="card__name">Infinity Diamond Tennis Bracelet</h3><p class="card__meta">950 Platinum · Lab-Grown Diamonds</p><p class="card__price">From $2,980</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="bracelets"
+        data-desc="A delicate expression of lightness and elegance. Crafted from 950 platinum, this exquisite bracelet features a graceful composition of three butterfly motifs. The central butterfly, designed with airy openwork wings, is connected by a fine platinum chain to two smaller butterflies on either side. Laboratory-grown diamonds totaling 0.65 ct delicately trace the contours of the wings, creating the impression of a soft, shimmering dance across the wrist. The diamonds feature D–E color and VS clarity, with their authenticity and premium quality confirmed by NGTC certification. Refined and versatile, this elegant bracelet transitions effortlessly from everyday sophistication to evening elegance.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/bracelet-2.jpg" data-alt-src="img/bracelet-2-2.jpg" alt="Wings of Tenderness Diamond Bracelet" /></div>
+        <div class="card__body"><h3 class="card__name">Wings of Tenderness Diamond Bracelet</h3><p class="card__meta">950 Platinum · 0.65 ct Lab-Grown Diamonds</p><p class="card__price">$1,560</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="bracelets"
+        data-desc="A delicate composition of platinum and light. Crafted from 950 platinum, this exquisite bracelet features a fine chain adorned with graceful four-leaf clover motifs. Each motif is formed by four round laboratory-grown diamonds, creating the appearance of a radiant little blossom. With a total diamond weight of approximately 1.00 ct, the bracelet offers exceptional brilliance while maintaining a light and refined silhouette. Graded D–E color and VS clarity, the diamonds offer exceptional brilliance, with their premium quality and authenticity confirmed by NGTC certification. Delicate, weightless, and effortlessly elegant, this versatile piece brings a subtle touch of brilliance to both everyday looks and evening ensembles.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/bracelet-3.jpg" data-alt-src="img/bracelet-3-2.jpg" alt="Diamond Blossom Bracelet" /></div>
+        <div class="card__body"><h3 class="card__name">Diamond Blossom Bracelet</h3><p class="card__meta">950 Platinum · Approx. 1.00 ct Lab-Grown Diamonds</p><p class="card__price">$1,380</p></div>
+      </article>
+
+<article class="card reveal reveal-3" data-category="earrings"
+        data-desc="Timeless platinum elegance, redefined. Crafted from 950 platinum, these refined hoop earrings are adorned with 0.33 ct of laboratory-grown diamonds. Featuring D color and VVS2 clarity, each stone delivers exceptional brilliance and purity, certified by IGI. Designed for women who appreciate understated luxury and impeccable craftsmanship.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-2.jpg" data-alt-src="img/earring-2-2.jpg" alt="Aura Diamond Hoop Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">Aura Diamond Hoop Earrings</h3><p class="card__meta">950 Platinum · 0.33 ct Lab-Grown Diamonds</p><p class="card__price">$790</p></div>
+      </article>
+
+
+<article class="card reveal reveal-2" data-category="earrings"
+        data-desc="A timeless interpretation of elegance. Crafted from 18K gold, these refined stud earrings feature four perfectly symmetrical laboratory-grown diamonds with a total weight of 1.80 carats. Graded D color and VVS2 clarity, each stone offers exceptional brilliance and purity, certified by IGI. Their clean geometric silhouette and radiant sparkle make them a sophisticated finishing touch for any occasion.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-3.jpg" data-alt-src="img/earring-3-2.jpg" alt="Golden Clover Stud Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">Golden Clover Stud Earrings</h3><p class="card__meta">18K Gold · 1.80 ct Lab-Grown Diamonds</p><p class="card__price">$1,080</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="earrings"
+        data-desc="Grace in every detail. Crafted from 950 platinum, these delicate yet luxurious stud earrings are adorned with 0.81 ct of diamonds, creating an elegant butterfly silhouette. Featuring D color and VVS2 clarity, the stones deliver exceptional brilliance, enhanced by the refined openwork setting. Each pair is accompanied by an IGI certificate, guaranteeing outstanding quality and authenticity.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-4.jpg" data-alt-src="img/earring-4-2.jpg" alt="Butterfly Diamond Stud Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">Butterfly Diamond Stud Earrings</h3><p class="card__meta">950 Platinum · 0.81 ct Diamonds</p><p class="card__price">$1,460</p></div>
+      </article>
+
+      <article class="card reveal" data-category="earrings"
+        data-desc="Elegance in its purest form. Crafted from 950 platinum, these timeless solitaire stud earrings feature 1.00 ct of laboratory-grown diamonds, allowing each stone to take center stage. Graded D color and VVS2 clarity, the diamonds offer exceptional brilliance and fire. Accompanied by an IGI certificate, this classic pair is a lasting symbol of luxury, refinement, and impeccable taste.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-5.jpg" data-alt-src="img/earring-5-2.jpg" alt="Crystal Diamond Stud Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">Crystal Diamond Stud Earrings</h3><p class="card__meta">950 Platinum · 1.00 ct Lab-Grown Diamonds</p><p class="card__price">$835</p></div>
+      </article>
+
+      <article class="card reveal reveal-2" data-category="earrings"
+        data-desc="A striking expression of refined luxury. Crafted from 950 platinum, these elegant drop earrings feature a delicate diamond-set line that gracefully descends to a brilliant center stone framed by a radiant halo. With a total weight of 2.00 ct of laboratory-grown diamonds, the stones feature D–E color and VS clarity, with their characteristics confirmed by NGTC certification. The sophisticated setting creates exceptional visual volume and brilliance, making these earrings equally captivating with evening wear or a polished business look.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-6.jpg" data-alt-src="img/earring-6-2.jpg" alt="Diamond Halo Drop Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">Diamond Halo Drop Earrings</h3><p class="card__meta">950 Platinum · 2.00 ct Lab-Grown Diamonds</p><p class="card__price">$1,740</p></div>
+      </article>
+
+      <article class="card reveal reveal-3" data-category="earrings"
+        data-desc="A timeless classic in platinum. These refined stud earrings feature round brilliant-cut laboratory-grown diamonds set in secure four-prong settings crafted from 950 platinum. The pair has a total diamond weight of 1.00 ct — 0.50 ct per earring. With exceptional D color and VVS2 clarity, the diamonds deliver remarkable brilliance and transparency, with their characteristics confirmed by IGI certification. A timeless symbol of elegance, status, and impeccable taste.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-7.jpg" data-alt-src="img/earring-7-2.jpg" alt="Radiance Diamond Stud Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">Radiance Diamond Stud Earrings</h3><p class="card__meta">950 Platinum · 1.00 ct Lab-Grown Diamonds</p><p class="card__price">$820</p></div>
+      </article>
+
+      <article class="card reveal" data-category="earrings"
+        data-desc="An expression of delicate geometry and effortless elegance. Crafted in 950 platinum, these earrings reinterpret the graceful silhouette of a butterfly through a refined, contemporary design. At the heart of each earring is a lab-grown diamond weighing 0.7 carats, with a total diamond weight of 1.4 carats. Each stone is securely held in a classic four-prong setting and complemented by delicate wing-shaped accents. Exceptional D–E color and VS clarity ensure remarkable brilliance and purity, while NGTC certification confirms the quality and characteristics of the diamonds.">
+        <div class="card__media imgfail-target"><img data-fallback src="img/earring-8.jpg" data-alt-src="img/earring-8-2.jpg" alt="Celestial Moth Lab-Grown Diamond Earrings" /></div>
+        <div class="card__body"><h3 class="card__name">“Celestial Moth” Lab-Grown Diamond Earrings</h3><p class="card__meta">950 Platinum · 1.4 ct Lab-Grown Diamonds</p><p class="card__price">$1,230</p></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- QUICK VIEW -->
+  <div class="quickview" data-quickview aria-hidden="true">
+    <div class="quickview__backdrop" data-qv-close></div>
+    <div class="quickview__dialog" role="dialog" aria-modal="true" aria-labelledby="qv-name">
+      <div class="quickview__media imgfail-target">
+        <div class="qv-track"></div>
+        <button class="qv-nav qv-prev" data-qv-prev aria-label="Previous image">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M11 1L2 10l9 9"/></svg>
+        </button>
+        <button class="qv-nav qv-next" data-qv-next aria-label="Next image">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 1l9 9-9 9"/></svg>
+        </button>
+        <div class="qv-dots" data-qv-dots></div>
+      </div>
+      <div class="quickview__body">
+        <button class="quickview__close" data-qv-close aria-label="Close" data-i18n-aria="qv.close">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1"><path d="M1 1l16 16M17 1L1 17"/></svg>
+        </button>
+        <p class="eyebrow qv-cat"></p>
+        <h2 class="qv-name" id="qv-name"></h2>
+        <p class="qv-meta"></p>
+        <div class="qv-rule"></div>
+        <p class="qv-desc"></p>
+        <p class="qv-price"></p>
+        <p class="qv-shipping" data-qv-shipping hidden data-i18n="qv.shipping">Free shipping on orders over $2,000.</p>
+        <a class="btn btn--gold qv-enquire" href="https://wa.me/601137331597" target="_blank" rel="noopener" data-i18n="qv.contact">Contact to Order</a>
+        <div class="qv-recs" data-qv-recs hidden>
+          <p class="qv-recs__title" data-i18n="qv.complete">Complete the Look</p>
+          <div class="qv-recs__row" data-qv-recs-row></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">Alméra<span data-i18n="footer.sub">Fine Jewellery</span></div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.exploreH">Explore</h4>
+          <nav><ul>
+            <li><a href="jewelry.html" data-i18n="footer.jewelry">Jewelry</a></li>
+            <li><a href="about.html" data-i18n="footer.about">About</a></li>
+            <li><a href="contact.html" data-i18n="footer.contact">Contact</a></li>
+            <li><a href="#" onclick="return false">Instagram</a></li>
+          </ul></nav>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.contactH">Contact</h4>
+          <nav><ul>
+            <li><a href="mailto:mariaseledevskaa9@gmail.com">mariaseledevskaa9@gmail.com</a></li>
+            <li><a href="#" onclick="return false">@almera.jewellery</a></li>
+            <li><a href="https://wa.me/601137331597" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul></nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> <span data-i18n="footer.copy">Alméra. All rights reserved.</span></span>
+        <a href="#" onclick="return false" data-i18n="footer.privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

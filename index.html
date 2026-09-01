@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alméra — Fine Jewellery</title>
+  <meta name="description" content="Aurélie — contemporary fine jewelry made to become part of your story." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--onhero header--home" id="header">
+    <a href="index.html" class="brand">
+      <img class="brand__img brand__img--dark" src="img/logo.png" alt="Alméra Jewellery" />
+      <img class="brand__img brand__img--light" src="img/logo-white.png" alt="Alméra Jewellery" />
+    </a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+        <li><a href="jewelry.html" data-i18n="nav.jewelry">Jewelry</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang" aria-label="Language">
+        <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+        <button class="lang__opt" data-set-lang="en">EN</button>
+        <span class="lang__sep">/</span>
+        <button class="lang__opt" data-set-lang="ru">RU</button>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
+    <a href="jewelry.html" data-i18n="nav.jewelry">Jewelry</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    <div class="lang" aria-label="Language">
+      <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+      <button class="lang__opt" data-set-lang="en">EN</button>
+      <span class="lang__sep">/</span>
+      <button class="lang__opt" data-set-lang="ru">RU</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__media imgfail-target">
+      <img data-fallback src="img/hero-home.png" alt="Aurélie fine jewelry" />
+    </div>
+    <div class="wrap hero__inner">
+      <p class="eyebrow reveal" style="color:rgba(255,255,255,.85)" data-i18n="hero.eyebrow">Alméra — Fine Jewellery</p>
+      <h1 class="hero__title reveal reveal-2" data-i18n-html="hero.title">Jewelry that becomes<br />part of your everyday life.</h1>
+      <p class="hero__sub reveal reveal-3" data-i18n="hero.sub">Contemporary pieces crafted for the women who wear them — quietly, every day, for years to come.</p>
+      <div class="hero__cta reveal reveal-4">
+        <a href="jewelry.html" class="btn btn--light" data-i18n="hero.cta">Explore Jewelry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED JEWELRY -->
+  <section class="section wrap">
+    <div class="center reveal" style="max-width:640px;margin-inline:auto;">
+      <p class="eyebrow" data-i18n="featured.eyebrow">The Selection</p>
+      <h2 class="section-title" style="margin-top:1rem;" data-i18n="featured.title">Featured Jewelry</h2>
+      <p class="lead" style="margin-top:1.2rem;" data-i18n="featured.lead">A considered edit of signature pieces — earrings, rings, necklaces and bracelets designed to last.</p>
+    </div>
+
+    <div class="grid grid--4" style="margin-top:clamp(3rem,6vw,5rem);">
+      <a href="jewelry.html" class="card reveal">
+        <div class="card__media imgfail-target">
+          <img data-fallback src="img/ring-5.jpg" alt="Halo Diamond Ring" />
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Halo Diamond Ring</h3>
+          <p class="card__meta">950 Platinum · 0.87 ct Lab-Grown Diamonds</p>
+          <p class="card__price">$1,395</p>
+        </div>
+      </a>
+      <a href="jewelry.html" class="card reveal reveal-2">
+        <div class="card__media imgfail-target">
+          <img data-fallback src="img/earring-1.jpg" alt="Platinum Bud Stud Earrings" />
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Platinum Bud Stud Earrings</h3>
+          <p class="card__meta">950 Platinum · 1.00 ct Diamond</p>
+          <p class="card__price">$890</p>
+        </div>
+      </a>
+      <a href="jewelry.html" class="card reveal reveal-3">
+        <div class="card__media imgfail-target">
+          <img data-fallback src="img/necklace-2.jpg" alt="Butterfly Diamond Necklace" />
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Butterfly Diamond Necklace</h3>
+          <p class="card__meta">950 Platinum · 0.48 ct Lab-Grown Diamonds</p>
+          <p class="card__price">$1,780</p>
+        </div>
+      </a>
+      <a href="jewelry.html" class="card reveal reveal-4">
+        <div class="card__media imgfail-target">
+          <img data-fallback src="img/bracelet-2.jpg" alt="Wings of Tenderness Diamond Bracelet" />
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Wings of Tenderness Diamond Bracelet</h3>
+          <p class="card__meta">950 Platinum · 0.65 ct Lab-Grown Diamonds</p>
+          <p class="card__price">$1,560</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="center reveal" style="margin-top:clamp(3rem,6vw,4.5rem);">
+      <a href="jewelry.html" class="link-under"><span data-i18n="featured.viewall">View all jewelry</span> <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- STORYTELLING -->
+  <section class="section wrap">
+    <div class="split reveal">
+      <div class="split__media imgfail-target">
+        <img data-fallback src="img/story.png" alt="Alméra — our story" />
+      </div>
+      <div class="split__body">
+        <p class="eyebrow" data-i18n="story.eyebrow">Our Story</p>
+        <h2 class="section-title" data-i18n="story.title">Part of every day</h2>
+        <p data-i18n-html="story.p1">Almera began with the friendship of two women — Alexandra and Maria — and a shared idea that, over time, grew into a jewelry brand. At its heart is a simple philosophy: <span class="hl">jewelry should be part of everyday life, not something reserved for a special occasion.</span></p>
+        <a href="about.html" class="link-under"><span data-i18n="story.link">Discover our story</span> <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL — DELIVERY -->
+  <section class="editorial editorial--left">
+    <div class="editorial__media imgfail-target">
+      <img data-fallback src="img/editorial-home.png" alt="Alméra editorial campaign" />
+    </div>
+    <div class="editorial__left reveal">
+      <div class="editorial__panel">
+        <p class="eyebrow" data-i18n="ship.title">Delivery &amp; Orders</p>
+        <p class="editorial__line" data-i18n-html="ship.line1">Delivery within <strong>7–10 days</strong>.</p>
+        <p class="editorial__line" data-i18n-html="ship.line2">Enjoy <strong>complimentary delivery on orders of $2,000 and above</strong>.</p>
+        <p class="editorial__cap" data-i18n="ship.caption">Get in touch with us to place your order or receive more information.</p>
+        <a class="btn btn--light" href="contact.html" data-i18n="ship.btn">Contact to Order</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">Alméra<span data-i18n="footer.sub">Fine Jewellery</span></div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.exploreH">Explore</h4>
+          <nav>
+            <ul>
+              <li><a href="jewelry.html" data-i18n="footer.jewelry">Jewelry</a></li>
+              <li><a href="about.html" data-i18n="footer.about">About</a></li>
+              <li><a href="contact.html" data-i18n="footer.contact">Contact</a></li>
+              <li><a href="#" onclick="return false">Instagram</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.contactH">Contact</h4>
+          <nav>
+            <ul>
+              <li><a href="mailto:mariaseledevskaa9@gmail.com">mariaseledevskaa9@gmail.com</a></li>
+              <li><a href="#" onclick="return false">@almera.jewellery</a></li>
+              <li><a href="https://wa.me/601137331597" target="_blank" rel="noopener">WhatsApp</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> <span data-i18n="footer.copy">Alméra. All rights reserved.</span></span>
+        <a href="#" onclick="return false" data-i18n="footer.privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>
