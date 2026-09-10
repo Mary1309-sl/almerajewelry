@@ -1,5 +1,5 @@
 /* =========================================================
-   AURÉLIE — interactions
+   ALMÉRA — interactions
    ========================================================= */
 (function () {
   "use strict";
@@ -264,6 +264,7 @@
     const qvDesc = qv.querySelector(".qv-desc");
     const qvPrice = qv.querySelector(".qv-price");
     const qvShipping = qv.querySelector("[data-qv-shipping]");
+    const qvSignature = qv.querySelector("[data-qv-signature]");
     const recsWrap = qv.querySelector("[data-qv-recs]");
     const recsRow = qv.querySelector("[data-qv-recs-row]");
     let lastFocus = null;
@@ -423,6 +424,8 @@
       const priceNum = parseInt(price.replace(/[^0-9]/g, ""), 10);
       if (qvShipping) qvShipping.hidden = !(priceNum >= 2000);
 
+      if (qvSignature) qvSignature.hidden = !card.querySelector(".card__badge");
+
       renderRecs(card);
 
       const dlg = qv.querySelector(".quickview__dialog");
@@ -448,6 +451,20 @@
     document.querySelectorAll("[data-category]").forEach((card) => {
       card.addEventListener("click", () => openQV(card));
     });
+
+    // auto-open a specific piece when arriving from another page (?view=<image-base>)
+    const viewParam = new URLSearchParams(location.search).get("view");
+    if (viewParam) {
+      const target = allCards.find((c) => {
+        const img = c.querySelector("img");
+        if (!img) return false;
+        const base = (img.getAttribute("src") || "")
+          .split("/").pop().replace(/\.[^.]+$/, "");
+        return base === viewParam;
+      });
+      if (target) openQV(target);
+    }
+
     qv.querySelectorAll("[data-qv-close]").forEach((el) =>
       el.addEventListener("click", closeQV)
     );
